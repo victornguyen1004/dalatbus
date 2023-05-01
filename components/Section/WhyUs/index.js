@@ -22,15 +22,12 @@ export default function WhyUsSection() {
             Create an account
           </Link>
         </div>
-
-        <div className="">
-          <Image
-            src={"/img/illustration_1.svg"}
-            height={400}
-            width={400}
-            className=""
-          />
-        </div>
+        <Image
+          src={"/img/illustration_1.svg"}
+          height={400}
+          width={400}
+          className="grow ml-8"
+        />
       </div>
     </div>
   );
