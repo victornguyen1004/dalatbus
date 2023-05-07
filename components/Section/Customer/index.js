@@ -16,10 +16,11 @@ export default function CustomerSection() {
           </div>
           <div className="flex mt-3">
             <Image
+              alt="customer.png"
               src={"/img/ayaka.png"}
               width={80}
               height={80}
-              className="mr-3 object-cover rounded-[50%] border-2 border-orange-3"
+              className="mr-3 object-cover w-20 rounded-[50%] border-2 border-orange-3"
             />
             <div className="">
               <div className="font-medium">Miss Ayaka</div>
@@ -34,10 +35,11 @@ export default function CustomerSection() {
           </div>
           <div className="flex mt-3">
             <Image
+              alt="customer.png"
               src={"/img/diluc.png"}
               width={80}
               height={80}
-              className="mr-3 object-cover rounded-[50%] border-2 border-orange-3"
+              className="mr-3 object-cover w-20 rounded-[50%] border-2 border-orange-3"
             />
             <div className="">
               <div className="font-medium">Mr. Diluc</div>
@@ -52,14 +54,15 @@ export default function CustomerSection() {
           </div>
           <div className="flex mt-3">
             <Image
+              alt="customer.png"
               src={"/img/ayato.png"}
               width={80}
               height={80}
-              className="mr-3 object-cover rounded-[50%] border-2 border-orange-3"
+              className="mr-3 object-cover w-20 rounded-[50%] border-2 border-orange-3"
             />
             <div className="">
               <div className="font-medium">Mr. Ayato</div>
-              <div className="text-text-secondary">Bobba Slayer</div>
+              <div className="text-text-secondary">Boba Slayer</div>
             </div>
           </div>
         </div>

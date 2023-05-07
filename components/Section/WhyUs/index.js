@@ -23,10 +23,11 @@ export default function WhyUsSection() {
           </Link>
         </div>
         <Image
+          alt="illustration.svg"
           src={"/img/illustration_1.svg"}
-          height={400}
-          width={400}
-          className="grow ml-8"
+          height={0}
+          width={0}
+          className="grow ml-8 w-[400px]"
         />
       </div>
     </div>

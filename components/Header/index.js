@@ -11,24 +11,24 @@ export default function Header() {
       ></Script>
       {/* Logo */}
       <Link href={"/"} className="flex items-center">
-        <Image src="/img/logo.png" width={44} height={44} className="" />
+        <Image src="/img/logo.png" width={0} height={0} className="w-11" alt="logo.png"/>
         <span className="font-black ml-4 text-3xl text-blue-3">DalatBus</span>
       </Link>
 
       {/* Navigation */}
       <nav className="flex items-center">
         <Link href={"/"} className="flex items-center py-2">
-          <i class="fa-solid fa-bus text-2xl text-blue-2"></i>
+          <i className="fa-solid fa-bus text-2xl text-blue-2"></i>
           <span className="pl-3 text-blue-3 font-semibold">Buses</span>
         </Link>
         <div className="w-[2px] h-4 bg-zinc-300 mx-4"></div>
         <Link href={"/"} className="flex items-center py-2">
-          <i class="fa-solid fa-train text-2xl text-green-2"></i>
+          <i className="fa-solid fa-train text-2xl text-green-2"></i>
           <span className="pl-3 text-green-3 font-semibold">Trains</span>
         </Link>
         <div className="w-[2px] h-4 bg-zinc-300 mx-4"></div>
         <Link href={"/"} className="flex items-center py-2">
-          <i class="fa-solid fa-building text-2xl text-orange-2"></i>
+          <i className="fa-solid fa-building text-2xl text-orange-2"></i>
           <span className="pl-3 font-semibold text-orange-3">Hotels</span>
         </Link>
       </nav>
@@ -36,7 +36,7 @@ export default function Header() {
       {/* User action */}
       <div className="font-semibold">
         <Link href={"/"} className=" p-2">
-          English <i class="fa-solid fa-chevron-down pl-1"></i>{" "}
+          English <i className="fa-solid fa-chevron-down pl-1"></i>{" "}
         </Link>
         <Link href={"/"} className=" p-2 mx-6">
           Help

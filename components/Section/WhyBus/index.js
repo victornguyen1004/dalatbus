@@ -5,10 +5,11 @@ export default function WhyBusSection() {
     <div className="px-x-global py-16">
       <div className="rounded-3xl px-20 py-8 flex items-center">
         <Image
+          alt="illustration.svg"
           src={"/img/illustration_2.svg"}
-          height={400}
-          width={400}
-          className="grow"
+          height={0}
+          width={0}
+          className="grow ml-8 w-[400px]"
         />
         <div className="ml-8">
           <div className="font-black text-4xl">Why taking the bus?</div>

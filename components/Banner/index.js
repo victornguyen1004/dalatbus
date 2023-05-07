@@ -28,7 +28,7 @@ export default function Banner() {
             />
           </div>
           <button className="mx-4">
-            <i class="fa-solid p-2 text- fa-arrow-right-arrow-left"></i>
+            <i className="fa-solid p-2 text- fa-arrow-right-arrow-left"></i>
           </button>
           <div className="grow-1 py-2">
             <label
@@ -44,7 +44,7 @@ export default function Banner() {
             />
           </div>
           <button className="grow-1 ml-4 bg-blue-2 rounded-r-lg px-4 flex items-center justify-center">
-            <i class="fa-solid fa-magnifying-glass text-2xl text-blue-0"></i>
+            <i className="fa-solid fa-magnifying-glass text-2xl text-blue-0"></i>
             <span className="ml-3 font-extrabold text-white">Search</span>
           </button>
         </div>
@@ -57,6 +57,8 @@ export default function Banner() {
           width={392}
           height={368}
           className="w-2/3"
+          priority
+          alt="bus.svg"
         />
       </div>
     </div>

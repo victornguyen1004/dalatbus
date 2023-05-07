@@ -11,6 +11,7 @@ export default function TopTravelledSection() {
       <div className="grid grid-cols-12 gap-x-8 gap-y-12">
         <div className="col-span-4 relative h-56">
           <Image
+          alt="toptravelled.png"
             src={"/img/route_1.png"}
             width={800}
             height={600}
@@ -22,6 +23,7 @@ export default function TopTravelledSection() {
         </div>
         <div className="col-span-4 relative h-56">
           <Image
+          alt="toptravelled.png"
             src={"/img/route_2.png"}
             width={800}
             height={600}
@@ -33,6 +35,7 @@ export default function TopTravelledSection() {
         </div>
         <div className="col-span-4 relative h-56">
           <Image
+          alt="toptravelled.png"
             src={"/img/route_3.png"}
             width={800}
             height={600}
@@ -44,6 +47,7 @@ export default function TopTravelledSection() {
         </div>
         <div className="col-span-4 relative h-56">
           <Image
+          alt="toptravelled.png"
             src={"/img/route_4.png"}
             width={800}
             height={600}
@@ -55,6 +59,7 @@ export default function TopTravelledSection() {
         </div>
         <div className="col-span-4 relative h-56">
           <Image
+          alt="toptravelled.png"
             src={"/img/route_5.png"}
             width={800}
             height={600}
@@ -66,6 +71,7 @@ export default function TopTravelledSection() {
         </div>
         <div className="col-span-4 relative h-56">
           <Image
+          alt="toptravelled.png"
             src={"/img/route_6.png"}
             width={800}
             height={600}
