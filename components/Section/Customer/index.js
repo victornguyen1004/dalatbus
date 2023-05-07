@@ -24,7 +24,7 @@ export default function CustomerSection() {
             />
             <div className="">
               <div className="font-medium">Miss Ayaka</div>
-              <div className="text-text-secondary">Kamisato's Local</div>
+              <div className="text-text-secondary">Kamisato&apos;s Local</div>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function CustomerSection() {
             />
             <div className="">
               <div className="font-medium">Mr. Diluc</div>
-              <div className="text-text-secondary">Teyvat's Batman</div>
+              <div className="text-text-secondary">Teyvat&apos;s Batman</div>
             </div>
           </div>
         </div>

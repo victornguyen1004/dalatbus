@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="flex justify-between flex-row pt-6 pb-9 px-x-global">
         <div className="flex flex-col">
           <Link href={"/"} className="flex items-center">
-            <Image src="/img/logo.png" width={0} height={0} className="w-11" alt="logo.png"/>
+            <Image src="/img/logo.png" width={88} height={90} className="w-11" alt="logo.png"/>
             <span className="font-black ml-4 text-3xl text-blue-3">
               DalatBus
             </span>

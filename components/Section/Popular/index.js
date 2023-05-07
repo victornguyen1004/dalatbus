@@ -1,15 +1,6 @@
-import { fetchBusRoutes } from "@/Services/fetch";
 import BusRoute from "./BusRoute";
-import { useState, useEffect } from "react";
 
-export default function PopularSection() {
-const [busRoutes, setBusRoutes] = useState([]);
-useEffect(() => {
-  const fetched = fetchBusRoutes();
-  console.log(fetched);
-  setBusRoutes(fetched);
-}, []);
-
+export default function PopularSection({ busRoutes }) {
   return (
     <div className="px-x-global py-16">
       <div className="text-center mb-12">
@@ -18,11 +9,9 @@ useEffect(() => {
         </span>
       </div>
       <div className="grid grid-cols-12 gap-y-3 gap-x-8">
-        {
-          // busRoutes.map((busRoute, id) => {
-          //   return <BusRoute name={busRoute.name} key={id}/>
-          // })
-        }
+        {busRoutes.map((busRoute, id) => (
+          <BusRoute name={busRoute.name} key={id} />
+        ))}
       </div>
     </div>
   );

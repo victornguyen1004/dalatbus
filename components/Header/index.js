@@ -1,8 +1,41 @@
 import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
+import { useRouter } from "next/router";
+import Cookies from "js-cookie";
 
 export default function Header() {
+  const router = useRouter();
+
+  function logout() {
+    Cookies.remove("token"); // Remove token from local storage
+    Cookies.remove("username"); // Remove username from local storage
+    router.push("/");
+  }
+
+  function renderUserAction() {
+    if (Cookies.get("token")) {
+      return (
+        <div className="text-sm">
+          Logged in as{" "}
+          <Link href="/" className="font-medium">
+            {Cookies.get("username")}
+          </Link>
+          ,
+          <button onClick={logout} className="p-2 font-semibold text-red-600">
+            Logout?
+          </button>
+        </div>
+      );
+    } else {
+      return (
+        <Link href={"/login"} className=" p-2">
+          Login
+        </Link>
+      );
+    }
+  }
+
   return (
     <div className="flex justify-between items-center py-7 px-x-global">
       <Script
@@ -11,7 +44,13 @@ export default function Header() {
       ></Script>
       {/* Logo */}
       <Link href={"/"} className="flex items-center">
-        <Image src="/img/logo.png" width={0} height={0} className="w-11" alt="logo.png"/>
+        <Image
+          src="/img/logo.png"
+          width={88}
+          height={90}
+          className="w-11"
+          alt="logo.png"
+        />
         <span className="font-black ml-4 text-3xl text-blue-3">DalatBus</span>
       </Link>
 
@@ -34,16 +73,14 @@ export default function Header() {
       </nav>
 
       {/* User action */}
-      <div className="font-semibold">
+      <div className="font-semibold flex items-center ">
         <Link href={"/"} className=" p-2">
           English <i className="fa-solid fa-chevron-down pl-1"></i>{" "}
         </Link>
         <Link href={"/"} className=" p-2 mx-6">
           Help
         </Link>
-        <Link href={"/"} className=" p-2">
-          Login
-        </Link>
+        {renderUserAction()}
       </div>
     </div>
   );
